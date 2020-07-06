@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil!{% endblock %}
+
+{% block monTitre %} <div class="center green">Page d'accueil</div> {% endblock %}
+
+
+{% block body %}
+<div class="center"><a href="{{path("personnages")}}">lien personnages</a></div>
+<div class="center"><a href="{{path("armes")}}">lien armes</a></div>
+
+<div class="row">
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="/images/personnages/Tya.png" width="40" height="300">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Tya<i class="material-icons right">more_vert</i></span>
+              <p><a href="/persos/tya">Cliquez Ici</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Titre<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="/images/personnages/Milo.png" width="40" height="300">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Milo<i class="material-icons right">more_vert</i></span>
+              <p><a href="/persos/Milo">Cliquez Ici</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Titre<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/personnages/Marc.png" width="40" height="300">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Marc<i class="material-icons right">more_vert</i></span>
+              <p><a href="/persos/marc">Cliquez Ici</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Titre<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/armes/hache.png" width="40" height="300">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Marc<i class="material-icons right">more_vert</i></span>
+              <p><a href="/armeshache">Cliquez Ici</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Titre<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/armes/epee.png" width="40" height="300">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Marc<i class="material-icons right">more_vert</i></span>
+              <p><a href="/armesepee">Cliquez Ici</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Titre<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/armes/arc.png" width="40" height="300">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Marc<i class="material-icons right">more_vert</i></span>
+              <p><a href="/armesarc">Cliquez Ici</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Titre<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+      </div>
+
+     
+
+  
+  </div>
+{% endblock %}

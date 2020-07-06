@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %} {% block title %} Personnages!{% endblock %}
+
+    {%block monTitre %} <div class="center yellow">Liste des Armes</div> {% endblock %} 
+ 
+
+
+
+{% block body %} 
+<table class="table">
+    <tr class="thead-dark">
+       <th>Image</th>
+       <th>Nom</th>
+       <th>Caractéristique</th>
+       <th>Degat</th>
+    </tr>
+    <tr>
+        {% for arme in games %}
+        <tr>
+            <td> <img src="{{ asset('images/armes/' ~ arme.nom ~ '.png')}}"</td>
+            <td><a href="{{ path('afficher_arme', {'nom' : arme.nom| lower})}}">{{ arme.nom }}</a></td>
+           
+            <td>{{arme.caract}}</td>
+            <td>{{arme.degat}}</td>
+           
+            
+           
+
+            
+        </tr>
+            
+        {% endfor %}
+    </tr>
+</table>
+ 
+{%endblock %}

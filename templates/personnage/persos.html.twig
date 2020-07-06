@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %} {% block title %} Personnages!{% endblock %}
+ {%block monTitre %} <div class="center yellow">Liste des Personnages</div> {% endblock %} 
+ 
+
+{% block body %} 
+<table class="table">
+    <tr class="thead-dark">
+       <th>Image</th>
+       <th>Nom</th>
+       <th>Age</th>
+       <th>Sexe</th>
+       <th>Force</th>
+       <th>Agilité</th>
+       <th>Intelligence</th>
+    </tr>
+    <tr>
+        {% for player in players %}
+        <tr>
+            <td> <img src="{{ asset('images/personnages/' ~ player.nom ~ '.png')}}"</td>
+            <td><a href="{{ path('afficher_personnage', {'nom' : player.nom| lower})}}">{{ player.nom }}</a></td>
+            <td>{{player.age}}</td>
+            <td>
+                {% if player.sexe %}
+                 Homme
+                 {% else %}
+                     Femme
+                {% endif %}
+               
+            </td>
+            <td>{{player.caract.force}}</td>
+            <td>{{player.caract.agi}}</td>
+            <td>{{player.caract.intel}}</td>
+            
+           
+
+            
+        </tr>
+            
+        {% endfor %}
+    </tr>
+</table>
+ 
+{%endblock %}
