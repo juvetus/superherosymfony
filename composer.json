@@ -65,8 +65,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "postinstall": "ng build"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            
            
         },
         "post-install-cmd": [
